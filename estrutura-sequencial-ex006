@@ -1,0 +1,7 @@
+'''
+Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
+'''
+import math
+r = float(input('Digite o raio do seu círculo:'))
+a = math.pi * (r ** 2)
+print('A área do seu círculo é {:.2f}'.format(a))
