@@ -1,0 +1,10 @@
+'''
+Faça um Programa que peça as 4 notas bimestrais e mostre a média.
+'''
+print('Para ter a sua média final digite suas notas abaixo.')
+n1 = float(input('Nota do primeiro semestre:'))
+n2 = float(input('Nota do segundo semestre:'))
+n3 = float(input('Nota do terceiro semestre:'))
+n4 = float(input('Nota do quarto semestre:'))
+mf = (n1 + n2 + n3 + n4) / 4
+print('Sua média final é', mf)
