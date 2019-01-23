@@ -1,0 +1,19 @@
+'''
+Exercício:
+Faça um programa que leia a quantidade de pessoas que serão convidadas para uma festa.
+Após isso o programa irá perguntar o nome de todas as pessoas e colocar numa lista 
+de convidados.
+Após isso irá imprimir todos os nomes numa lista.
+'''
+n2 = input('Quantas pessoas você pretende convidar? Por favor digite aqui:')
+print('Por favor digite os nomes dos convidados.')
+l = []
+i2 = 1
+while i2 <= int(n2):
+    nc = input('Convidado '+ str(i2) +':')
+    l.append(nc)
+    i2 += 1
+print('Serão ', n2,' convidados.')
+print('\nLISTA DE CONVIDADOS')
+for nc in l:
+    print(nc)
