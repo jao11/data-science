@@ -1,0 +1,6 @@
+'''
+Faça um Programa que converta metros para centímetros.
+'''
+hm = float(input('Para saber sua altura em centímetros digite sua altura em metros:'))
+hcm = hm * 100
+print('Sua altura em centímetros é {}cm.'.format(hcm))
