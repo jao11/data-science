@@ -1,0 +1,25 @@
+from cliente import Cliente
+
+
+class Conta(Cliente):
+
+    def __init__(self, nome, cpf, idade, saldo, limite):
+        Cliente.__init__(self, nome, cpf, idade)
+        self.saldo = float(saldo)
+        self.limite = float(limite)
+
+    def sacar(self, sacar):
+        if float(sacar) <= 2000.00:
+            self.saldo -= float(sacar)
+            if self.saldo < (self.limite - 2 * self.limite):
+                print('O valor requisitado ultrapassa o seu limite de cheque especial')
+                self.saldo += float(sacar)
+                print('Seu saldo é R${:.2f}'.format(self.saldo))
+            else:
+                print('Seu saldo é R${:.2f}'.format(self.saldo))
+        else:
+            print('Você ultrapassou seu limite de saque diário.')
+
+    def deposito(self, deposito):
+        self.saldo += float(deposito)
+        print('Seu novo saldo é R${:.2f}'.format(self.saldo))
